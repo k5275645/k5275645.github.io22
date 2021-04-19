@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Upbit API</h1>
-    <input type="button" value ="전체 코인 보기" class="market">
-    <input type="button" value ="원화 코인 보기" class="KRW">
-    <input type="button" value ="BTC 코인 보기" class="BTC">
-    <input type="button" value ="USDT 코인 보기" class="USDT">
-    
-    <div class = "container">
-        <div class ="market-info"></div>
-        <table border = 1 class="market-table">
-            <thead>
-                <tr>
-                    <th>market</th>
-                    <th>korean_name</th>
-                    <th>english_name</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upbit API Practice</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Upbit API Practice</h1>
+    <button class="KRW">KRW</button>
+    <button class="BTC">BTC</button>
+    <button class="USDT">USDT</button>
+
+    <div class="container">
+      <table class="market-table">
+        <thead>
+          <tr>
+            <th>market</th>
+            <th>korean_name</th>
+            <th>english_name</th>
+            <th>시가</th>
+            <th>고가</th>
+            <th>저가</th>
+            <th>종가</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
-</body>
-<script src="index.js"></script>
+  </body>
+  <script src="index.js"></script>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>Upbit API Practice</h1>
-    <button class="KRW">KRW</button>
-    <button class="BTC">BTC</button>
-    <button class="USDT">USDT</button>
-
     <div class="container">
+      <header>
+        <h2>Upbit API Practice</h2>
+      </header>
+      <button class="KRW" id="btn">KRW</button>
+      <button class="BTC" id="btn">BTC</button>
+      <button class="USDT" id="btn">USDT</button>
       <table class="market-table">
         <thead>
           <tr>
+            <th>관심</th>
             <th>market</th>
             <th>korean_name</th>
             <th>english_name</th>
@@ -24,6 +26,7 @@
             <th>고가</th>
             <th>저가</th>
             <th>현재가</th>
+            <th>전일대비</th>
           </tr>
         </thead>
         <tbody></tbody>

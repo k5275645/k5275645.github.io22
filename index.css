@@ -2,11 +2,11 @@
 
 :root {
   --button-color: #ffffff;
-  --button-bg-color: #0d6efd;
-  --button-hover-bg-color: #025ce2;
+  --button-bg-color: #00b35fc7;
+  --button-hover-bg-color: #408f0bde;
 }
 
-button {
+#btn {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -37,55 +37,74 @@ button {
   transition: 0.5s;
 }
 
-button.success {
-  --button-bg-color: #28a745;
-  --button-hover-bg-color: #218838;
-}
-
-button.error {
-  --button-bg-color: #dc3545;
-  --button-hover-bg-color: #c82333;
-}
-
-button.warning {
-  --button-color: #212529;
-  --button-bg-color: #ffc107;
-  --button-hover-bg-color: #e0a800;
-}
-
-button:active,
-button:hover,
-button:focus {
+#btn:active,
+#btn:hover,
+#btn:focus {
   background: var(--button-hover-bg-color);
   outline: 0;
 }
-button:disabled {
+#btn:disabled {
   opacity: 0.5;
 }
 
 table {
   border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+  background-color: #009879;
+  color: #ffffff;
   text-align: left;
-  line-height: 1.5;
 }
-table thead th {
-  padding: 10px;
-  font-weight: bold;
-  vertical-align: top;
-  color: #369;
-  border-bottom: 3px solid #036;
-}
-table tbody th {
-  width: 150px;
-  padding: 10px;
-  font-weight: bold;
-  vertical-align: top;
-  border-bottom: 1px solid #ccc;
-  background: #f3f6f7;
-}
+
+table th,
 table td {
-  width: 350px;
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header h2 {
+  color: #ffffff;
+  background-color: rgba(94, 168, 72, 0.705);
+  margin-top: 0px;
+  margin-bottom: 30px;
   padding: 10px;
-  vertical-align: top;
-  border-bottom: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
+  padding: 10px;
+  margin-left: 15px;
+  margin-top: 20px;
 }

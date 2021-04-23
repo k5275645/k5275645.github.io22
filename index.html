@@ -6,15 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Upbit API Practice</title>
     <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      data-auto-a11y="true"
+    ></script>
   </head>
   <body>
     <div class="container">
-      <header>
-        <h2>Upbit API Practice</h2>
-      </header>
-      <button class="KRW" id="btn">KRW</button>
-      <button class="BTC" id="btn">BTC</button>
-      <button class="USDT" id="btn">USDT</button>
+        <nav class = "navbar">
+          <div class="navbar__logo">
+            <a href = "#">Upbit Api</a>
+            <i class="fas fa-level-up-alt"></i>
+          </div>
+          <ul class="navbar__menu">
+              <li><button class="KRW" id="btn">KRW</button></li>
+              <li><button class="BTC" id="btn">BTC</button></li>
+              <li><button class="USDT" id="btn">USDT</button></li>
+          </ul>
+          <ul class="navbar__icons">
+            <li><a href="https://upbit.com/"><i class="fas fa-arrow-up"></i></a></li>
+            <li><a href="https://kimp.ga/"><i class="fab fa-korvue"></i></a></li>
+          </ul>
+        </nav>
+      <table class="interest-table">
+        <thead>
+          <tr>
+            <th>관심</th>
+            <th>market</th>
+            <th>korean_name</th>
+            <th>english_name</th>
+            <th>시가</th>
+            <th>고가</th>
+            <th>저가</th>
+            <th>현재가</th>
+            <th>전일대비</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
       <table class="market-table">
         <thead>
           <tr>

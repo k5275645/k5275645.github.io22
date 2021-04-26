@@ -83,6 +83,10 @@ table tbody tr.active-row {
   color: #009879;
 }
 
+table tbody tr td {
+  text-align: right;
+}
+
 html,
 body {
   margin: 0;
